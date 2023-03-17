@@ -1,0 +1,30 @@
+tr,td{
+    margin: 1px;
+    border: 1px solid black;
+}
+td{
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: darkcyan;
+    font-weight: 500;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+header img{
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10%;
+    border-color: darkcyan;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+<header>
+    <img [src]="imageUrl" alt="Book List">
+</header>
+<main>
+    <table class="books">
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Date</td>
+                <td>Genre</td>
+                <td>Price</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of bookList">
+                <td>{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.date | date:'yyyy-MM-dd' }}</td>
+                <td>{{book.genre}}</td>
+                <td>{{book.price | currency:'INR':'symbol'}}</td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+</main>
+
